@@ -1,0 +1,198 @@
+{
+  "schema": "myspace.master_timetable.v1",
+  "title": "HIT Master Timetable",
+  "timezone": "Asia/Shanghai",
+  "term": "2026 Autumn",
+  "coverage": {
+    "from": "2026-10-12",
+    "through": "2026-12-06",
+    "source_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+    "date_handling": "Each dates array contains only dated occurrences supported by the screenshots and the displayed week ranges. No recurrence beyond these dates is implied."
+  },
+  "period_times": {
+    "1-2": {"start": "08:00", "end": "09:45"},
+    "3-4": {"start": "10:00", "end": "11:45"},
+    "5-6": {"start": "13:45", "end": "15:30"},
+    "7-8": {"start": "15:45", "end": "17:30"}
+  },
+  "classes": [
+    {
+      "course": "中国概况",
+      "instructor": "马骏",
+      "building": "电机楼",
+      "room": "30012",
+      "day": "Monday",
+      "periods": [1, 2],
+      "time": {"start": "08:00", "end": "09:45"},
+      "active_weeks": [10, 11, 12, 13, 14],
+      "dates": ["2026-11-02", "2026-11-09", "2026-11-16", "2026-11-23", "2026-11-30"],
+      "source_text": "中国概况 马骏[10-17周]电机楼30012"
+    },
+    {
+      "course": "计算思维与人工智能",
+      "instructor": "曹海龙",
+      "building": "正心",
+      "room": "43",
+      "day": "Tuesday",
+      "periods": [1, 2],
+      "time": {"start": "08:00", "end": "09:45"},
+      "active_weeks": [9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-27", "2026-11-03", "2026-11-10", "2026-11-17", "2026-11-24", "2026-12-01"],
+      "source_text": "计算思维与人工智能 曹海龙[9-16周]正心43"
+    },
+    {
+      "course": "微积分E（1）",
+      "instructor": "BOSSMANN FLORIAN",
+      "building": "正心",
+      "room": "44",
+      "day": "Wednesday",
+      "periods": [1, 2],
+      "time": {"start": "08:00", "end": "09:45"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-14", "2026-10-21", "2026-10-28", "2026-11-04", "2026-11-11", "2026-11-18", "2026-11-25", "2026-12-02"],
+      "source_text": "微积分E（1） BOSSMANN FLORIAN[4-17周]正心44"
+    },
+    {
+      "course": "经济学原理",
+      "instructor": "李寅",
+      "building": "致知",
+      "room": "13",
+      "day": "Thursday",
+      "periods": [1, 2],
+      "time": {"start": "08:00", "end": "09:45"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-15", "2026-10-22", "2026-10-29", "2026-11-05", "2026-11-12", "2026-11-19", "2026-11-26", "2026-12-03"],
+      "source_text": "经济学原理 李寅[4-17周]致知13"
+    },
+    {
+      "course": "计算思维与人工智能",
+      "instructor": "曹海龙",
+      "building": "正心",
+      "room": "41",
+      "day": "Thursday",
+      "periods": [3, 4],
+      "time": {"start": "10:00", "end": "11:45"},
+      "active_weeks": [9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-29", "2026-11-05", "2026-11-12", "2026-11-19", "2026-11-26", "2026-12-03"],
+      "source_text": "计算思维与人工智能 曹海龙[9-16周]正心41"
+    },
+    {
+      "course": "微积分E（1）",
+      "instructor": "BOSSMANN FLORIAN",
+      "building": "正心",
+      "room": "44",
+      "day": "Friday",
+      "periods": [3, 4],
+      "time": {"start": "10:00", "end": "11:45"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-16", "2026-10-23", "2026-10-30", "2026-11-06", "2026-11-13", "2026-11-20", "2026-11-27", "2026-12-04"],
+      "source_text": "微积分E（1） BOSSMANN FLORIAN[4-17周]正心44"
+    },
+    {
+      "course": "初级汉语（1）",
+      "instructor": "刘李明",
+      "building": "电机楼",
+      "room": "30029",
+      "day": "Monday",
+      "periods": [5, 6],
+      "time": {"start": "13:45", "end": "15:30"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-12", "2026-10-19", "2026-10-26", "2026-11-02", "2026-11-09", "2026-11-16", "2026-11-23", "2026-11-30"],
+      "source_text": "初级汉语（1） 刘李明[4-16周]电机楼30029"
+    },
+    {
+      "course": "管理学基础",
+      "instructor": "刘宝魏",
+      "building": "正心",
+      "room": "514",
+      "day": "Tuesday",
+      "periods": [5, 6],
+      "time": {"start": "13:45", "end": "15:30"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-13", "2026-10-20", "2026-10-27", "2026-11-03", "2026-11-10", "2026-11-17", "2026-11-24", "2026-12-01"],
+      "source_text": "管理学基础 刘宝魏[5-17周]正心514"
+    },
+    {
+      "course": "管理学基础",
+      "instructor": "刘宝魏",
+      "building": "正心",
+      "room": "221",
+      "day": "Thursday",
+      "periods": [5, 6],
+      "time": {"start": "13:45", "end": "15:30"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-15", "2026-10-22", "2026-10-29", "2026-11-05", "2026-11-12", "2026-11-19", "2026-11-26", "2026-12-03"],
+      "source_text": "管理学基础 刘宝魏[5-17周]正心221"
+    },
+    {
+      "course": "中国概况",
+      "instructor": "马骏",
+      "building": "电机楼",
+      "room": "30012",
+      "day": "Friday",
+      "periods": [5, 6],
+      "time": {"start": "13:45", "end": "15:30"},
+      "active_weeks": [10, 11, 12, 13, 14],
+      "dates": ["2026-11-06", "2026-11-13", "2026-11-20", "2026-11-27", "2026-12-04"],
+      "source_text": "中国概况 马骏[10-17周]电机楼30012"
+    },
+    {
+      "course": "经济学原理",
+      "instructor": "李寅",
+      "building": "正心",
+      "room": "23",
+      "day": "Tuesday",
+      "periods": [7, 8],
+      "time": {"start": "15:45", "end": "17:30"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-13", "2026-10-20", "2026-10-27", "2026-11-03", "2026-11-10", "2026-11-17", "2026-11-24", "2026-12-01"],
+      "source_text": "经济学原理 李寅[4-17周]正心23"
+    },
+    {
+      "course": "微积分E（1）",
+      "instructor": "BOSSMANN FLORIAN",
+      "building": "正心",
+      "room": "44",
+      "day": "Monday",
+      "periods": [7, 8],
+      "time": {"start": "15:45", "end": "17:30"},
+      "active_weeks": [10, 11, 12, 13, 14],
+      "dates": ["2026-11-02", "2026-11-09", "2026-11-16", "2026-11-23", "2026-11-30"],
+      "source_text": "微积分E（1） BOSSMANN FLORIAN[10-15周]正心44"
+    },
+    {
+      "course": "初级汉语（1）",
+      "instructor": "刘李明",
+      "building": "电机楼",
+      "room": "30029",
+      "day": "Thursday",
+      "periods": [7, 8],
+      "time": {"start": "15:45", "end": "17:30"},
+      "active_weeks": [7, 8, 9, 10, 11, 12, 13, 14],
+      "dates": ["2026-10-15", "2026-10-22", "2026-10-29", "2026-11-05", "2026-11-12", "2026-11-19", "2026-11-26", "2026-12-03"],
+      "source_text": "初级汉语（1） 刘李明[4-16周]电机楼30029"
+    },
+    {
+      "course": "经济学原理",
+      "instructor": "李寅",
+      "building": "致知",
+      "room": "33",
+      "day": "Monday",
+      "periods": [7, 8],
+      "time": {"start": "15:45", "end": "17:30"},
+      "active_weeks": [7, 8, 9],
+      "dates": ["2026-10-12", "2026-10-19", "2026-10-26"],
+      "source_text": "经济学原理 李寅[4-9周]致知33"
+    }
+  ],
+  "unreadable_fields": [],
+  "notes": [
+    "Tanggal diambil dari kalender minggu 7-14 yang tampak pada screenshot IMG_0571-IMG_0583, dimulai Senin 2026-10-12.",
+    "Screenshot yang hanya menampilkan bagian bawah dipadukan dengan screenshot minggu yang sama; kelas yang berulang pada screenshot overlap hanya dicatat sekali per tanggal.",
+    "Waktu jam dikonversi dari nomor periode menggunakan jadwal resmi HIT; screenshot sendiri hanya menampilkan nomor periode.",
+    "Nama mata kuliah, dosen, gedung, dan ruang dipertahankan dalam ejaan Tionghoa/Latin yang tampak pada screenshot.",
+    "Screenshot minggu 14 mencakup sampai 2026-12-06; tidak ada kelas pada tanggal setelah pertemuan terakhir yang terlihat (2026-12-04) yang ditambahkan."
+  ],
+  "time_source": "https://jtxy.hit.edu.cn/_upload/article/files/f9/c5/e28e5a654b23924178861a26d1b8/1c04bd47-a5ea-4e7f-ace7-0df66a4dcf5d.pdf"
+}
+
