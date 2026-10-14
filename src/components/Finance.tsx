@@ -27,7 +27,7 @@ import { Button } from "./ui/button";
 import { Modal } from "./ui/dialog";
 import { CurrencySelect, Empty, Field, Form, num, str } from "./common";
 
-function DebtEditor({
+export function DebtEditor({
   debt,
   kind,
   onClose,

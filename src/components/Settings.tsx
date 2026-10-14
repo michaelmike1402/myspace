@@ -135,7 +135,8 @@ export function Settings({
               utang/piutang · {preview.events.length} countdown ·{" "}
               {preview.subscriptions.length} subscription ·{" "}
               {preview.randomizers.length} daftar pilihan ·{" "}
-              {preview.conversions.length} konversi
+              {preview.conversions.length} konversi ·{" "}
+              {preview.quickNotes.length} catatan cepat
             </p>
             <label className="check-label">
               <input

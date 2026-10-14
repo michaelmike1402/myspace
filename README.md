@@ -46,6 +46,16 @@ Semua tanggal kelas adalah tanggal lokal `Asia/Shanghai`; instan dihitung dengan
 
 Peta vektor kampus disertakan dalam bundle agar berfungsi **offline**, dengan geometri publik OpenStreetMap. Tidak ada pengunduhan tile, foto gedung rekaan, token map, atau layanan berbayar. Titik fokus adalah pusat batas geometri gedung, bukan koordinat pintu masuk atau petunjuk rute. Geometri OSM bersifat kontribusi komunitas dan bisa tertinggal dari kondisi nyata. Sumber, versi, dan lisensi: [docs/SOURCES.md](docs/SOURCES.md).
 
+## MYSPACE v2 · Phase 1
+
+**Search & commands:** tekan `Ctrl+K` / `Cmd+K` atau tombol Search di topbar. Kata Indonesia/English dicocokkan langsung, tanpa membedakan huruf besar/kecil, termasuk potongan kata. Contoh: `jadwal`, `add debt`, `buat countdown`, `tambah subscription`, `convert uang`, dan `catatan`. Gunakan ↑/↓ lalu Enter, sentuh hasil, atau Escape/klik backdrop untuk menutup. Shortcut tidak mengganti form yang sedang terbuka; tutup form terlebih dahulu agar isian tidak hilang.
+
+**Quick Capture:** klik tombol lingkaran di tepi layar untuk Quick Note, Tambah utang, Tambah countdown, atau Quick convert. Geser memakai mouse/sentuhan; tombol menempel ke sisi terdekat. Saat fokus keyboard, ←/→ memilih sisi, ↑/↓ menggeser vertikal, Home/End ke atas/bawah, Enter/Space membuka menu. Tombol meredup setelah 5 detik tanpa interaksi. Posisi menyesuaikan viewport, safe area, dan preferensi reduced motion.
+
+Quick Note menyimpan teks dan timestamp Shanghai; riwayat dapat dibuka dari kedua akses cepat. Catatan serta posisi tombol ikut dalam export/import backup. Data v1 yang belum memiliki field baru memperoleh default saat dibaca, tanpa reset atau penanaman ulang timetable. Gunakan versi ini atau yang lebih baru untuk membuka backup yang berisi Quick Notes; versi aplikasi lama belum mengenali field tambahan tersebut.
+
+Detail arsitektur, daftar berkas, dan cakupan pengujian: [docs/PHASE1.md](docs/PHASE1.md).
+
 ## Penyimpanan dan backup
 
 Data berada di IndexedDB bernama `myspace-v1` pada **origin dan profil browser ini**. Tidak ada akun aplikasi, backend, tracking, atau sinkronisasi antarperangkat. Memindahkan alamat hosting, memakai browser lain, atau menghapus site data menghasilkan penyimpanan berbeda. Pembukaan pertama menanam data awal satu kali. Update aplikasi tidak menimpa data pengguna.

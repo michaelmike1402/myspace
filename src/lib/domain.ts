@@ -133,6 +133,12 @@ export const moduleIds = [
   "randomizer",
 ] as const;
 export const settingsSchema = z.object({
+  capturePosition: z
+    .object({
+      side: z.enum(["left", "right"]),
+      y: z.number().finite().min(0).max(1),
+    })
+    .default({ side: "right", y: 0.7 }),
   theme: z.enum(["dark", "light", "system"]),
   name: z.string().max(50),
   rate: z.number().positive().max(1e9).nullable(),
@@ -151,6 +157,16 @@ export const settingsSchema = z.object({
 export const appSchema = z
   .object({
     schema: z.literal("myspace.backup.v1"),
+    quickNotes: z
+      .array(
+        z.object({
+          id: text,
+          body: z.string().trim().min(1).max(5000),
+          createdAt: timestamp,
+        }),
+      )
+      .max(10000)
+      .default([]),
     settings: settingsSchema,
     classes: z.array(classSchema).max(20000),
     debts: z.array(debtSchema).max(10000),
@@ -178,6 +194,7 @@ export const appSchema = z
       "subscriptions",
       "randomizers",
       "conversions",
+      "quickNotes",
     ] as const) {
       if (new Set(data[key].map((x) => x.id)).size !== data[key].length)
         ctx.addIssue({

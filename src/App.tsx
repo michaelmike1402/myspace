@@ -58,6 +58,7 @@ import { DebtTracker, Converter } from "./components/Finance";
 import { Countdowns } from "./components/Countdowns";
 import { Subscriptions } from "./components/Subscriptions";
 import { Randomizer } from "./components/Randomizer";
+import { GlobalActions } from "./components/GlobalActions";
 
 const modules = {
   timetable: {
@@ -456,6 +457,7 @@ export default function App() {
             </strong>
           </div>
           <div className="topbar-right">
+            <GlobalActions navigate={go} />
             <span className="connection-status">
               {online ? (
                 <>

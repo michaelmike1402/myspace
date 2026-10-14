@@ -20,7 +20,9 @@ export const courseEnglish: Record<string, string> = {
 export function seed(): AppData {
   return {
     schema: "myspace.backup.v1",
+    quickNotes: [],
     settings: {
+      capturePosition: { side: "right", y: 0.7 },
       theme: "dark",
       name: "",
       rate: null,

@@ -56,7 +56,8 @@ export async function change(edit: (draft: AppData) => void) {
     await db.transaction("rw", db.documents, async () => {
       const record = await db.documents.get("main");
       if (!record) throw new Error("Data belum siap.");
-      const draft = structuredClone(record.data);
+      // Apply additive defaults before editing older v1 documents; never reseed.
+      const draft = appSchema.parse(record.data);
       edit(draft);
       const data = appSchema.parse(draft);
       await db.documents.put({ id: "main", data });
