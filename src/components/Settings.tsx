@@ -5,6 +5,7 @@ import { parseBackup, dateKey, type AppData } from "../lib/domain";
 import { Button } from "./ui/button";
 import { Modal } from "./ui/dialog";
 import { Field } from "./common";
+import { NotificationSettings } from "./NotificationSettings";
 export function exportBackup(data: AppData) {
   const url = URL.createObjectURL(
     new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }),
@@ -74,6 +75,7 @@ export function Settings({
             </button>
           ))}
         </div>
+        <NotificationSettings />
         <h3 className="section-label">YOUR DATA, YOUR DEVICE</h3>
         <div className="storage-note">
           <HardDrive size={20} />

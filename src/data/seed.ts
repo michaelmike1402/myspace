@@ -1,5 +1,6 @@
 import master from "./master-timetable.json";
 import type { AppData } from "../lib/domain";
+import { defaultNotificationPreferences } from "../lib/notification-preferences";
 export { master };
 const pinyin: Record<string, string> = {
   中国概况: "Zhōngguó gàikuàng",
@@ -22,6 +23,7 @@ export function seed(): AppData {
     schema: "myspace.backup.v1",
     quickNotes: [],
     settings: {
+      notifications: defaultNotificationPreferences(),
       capturePosition: { side: "right", y: 0.7 },
       theme: "dark",
       name: "",

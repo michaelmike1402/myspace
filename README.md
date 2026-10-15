@@ -56,6 +56,10 @@ Quick Note menyimpan teks dan timestamp Shanghai; riwayat dapat dibuka dari kedu
 
 Detail arsitektur, daftar berkas, dan cakupan pengujian: [docs/PHASE1.md](docs/PHASE1.md).
 
+## Notification preferences · Subtask 03
+
+Di **Settings & backup → Notifications**, simpan preferensi kelas, subscription, countdown, dan utang. Saklar global/kategori awalnya nonaktif; lead time default masing-masing 30 menit, 3 hari, 1 hari, dan tepat jatuh tempo. Preferensi tersimpan lokal dan ikut backup. **iPhone Web Push (Planned)** belum mengirim atau menjadwalkan notifikasi; status izin hanya dibaca tanpa meminta izin. Pengingat dashboard subscription yang sudah ada tetap memakai pengaturan per subscription. Model data, kompatibilitas, dan integrasi mendatang: [docs/SUBTASK03.md](docs/SUBTASK03.md).
+
 ## Penyimpanan dan backup
 
 Data berada di IndexedDB bernama `myspace-v1` pada **origin dan profil browser ini**. Tidak ada akun aplikasi, backend, tracking, atau sinkronisasi antarperangkat. Memindahkan alamat hosting, memakai browser lain, atau menghapus site data menghasilkan penyimpanan berbeda. Pembukaan pertama menanam data awal satu kali. Update aplikasi tidak menimpa data pengguna.

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { notificationPreferencesSchema } from "./notification-preferences";
 export const ZONE = "Asia/Shanghai";
 export const uid = () => crypto.randomUUID();
 export const dateKey = (d = new Date()) =>
@@ -133,6 +134,7 @@ export const moduleIds = [
   "randomizer",
 ] as const;
 export const settingsSchema = z.object({
+  notifications: notificationPreferencesSchema,
   capturePosition: z
     .object({
       side: z.enum(["left", "right"]),
