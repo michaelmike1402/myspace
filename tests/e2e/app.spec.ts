@@ -53,6 +53,8 @@ test("responsive dashboard, week edit, verified offline map, persistent theme", 
   await page.getByRole("button", { name: "Simpan", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
   await page.reload();
+  // Reload opens the current week; return to the occurrence edited above.
+  await page.getByLabel("Lompat ke tanggal").fill("2026-10-12");
   await expect(
     page.getByRole("button").filter({ hasText: "初级汉语（1）" }).first(),
   ).toContainText("30030");
